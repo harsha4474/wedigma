@@ -127,8 +127,9 @@ body {
 }
 
 .nav-link:hover {
-    background: var(--gray-100);
+    background: rgba(37, 99, 235, 0.08);
     color: var(--blue-primary);
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.12);
 }
 
 .nav-link-cta {
@@ -198,6 +199,25 @@ body {
     padding: 160px 0 120px;
     position: relative;
     overflow: hidden;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, transparent 70%);
+    top: -200px;
+    right: -100px;
+    pointer-events: none;
+    animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(30px, -30px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
 }
 
 .hero-bg-graphic {
@@ -552,6 +572,19 @@ body {
     pointer-events: none;
 }
 
+.capabilities::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(96, 165, 250, 0.06) 0%, transparent 70%);
+    bottom: -150px;
+    left: 10%;
+    pointer-events: none;
+    animation: float 25s ease-in-out infinite;
+}
+
 .capabilities-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -569,18 +602,20 @@ body {
 
 .capability-card:hover {
     border-color: var(--blue-primary);
-    box-shadow: 0 0 0 2px var(--blue-primary), var(--shadow-lg);
-    transform: translateY(-4px);
+    box-shadow: 0 0 0 2px var(--blue-primary), 0 12px 24px rgba(37, 99, 235, 0.15);
+    transform: translateY(-6px);
+    background: linear-gradient(135deg, #ffffff 0%, rgba(37, 99, 235, 0.02) 100%);
 }
 
 .capability-card:hover .card-icon {
     color: var(--blue-primary);
+    transform: scale(1.1);
 }
 
 .card-icon {
     color: var(--blue-primary);
     margin-bottom: 20px;
-    transition: color 0.3s;
+    transition: all 0.3s;
 }
 
 .card-title {
@@ -641,6 +676,20 @@ body {
     pointer-events: none;
 }
 
+.why-us::after {
+    content: '';
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.04) 0%, transparent 70%);
+    top: 50%;
+    right: -100px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    animation: float 20s ease-in-out infinite;
+}
+
 .reasons-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -657,10 +706,10 @@ body {
 }
 
 .reason-card:hover {
-    background: white;
+    background: linear-gradient(135deg, #ffffff 0%, rgba(37, 99, 235, 0.03) 100%);
     border-color: var(--blue-primary);
-    box-shadow: 0 0 0 2px var(--blue-primary), var(--shadow-lg);
-    transform: translateY(-4px);
+    box-shadow: 0 0 0 2px var(--blue-primary), 0 12px 24px rgba(37, 99, 235, 0.15);
+    transform: translateY(-6px);
 }
 
 .reason-card:hover .reason-number {
@@ -899,8 +948,9 @@ body {
 
 .cloud-feature-card:hover {
     border-color: var(--blue-primary);
-    box-shadow: 0 0 0 2px var(--blue-primary), var(--shadow-lg);
-    transform: translateY(-4px);
+    box-shadow: 0 0 0 2px var(--blue-primary), 0 12px 24px rgba(37, 99, 235, 0.15);
+    transform: translateY(-6px);
+    background: linear-gradient(135deg, #ffffff 0%, rgba(37, 99, 235, 0.02) 100%);
 }
 
 .feature-card-title {
@@ -959,6 +1009,19 @@ body {
         radial-gradient(circle at 30% 50%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
         radial-gradient(circle at 70% 80%, rgba(96, 165, 250, 0.04) 0%, transparent 40%);
     pointer-events: none;
+}
+
+.growth::after {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.05) 0%, transparent 70%);
+    top: 20%;
+    right: 5%;
+    pointer-events: none;
+    animation: float 18s ease-in-out infinite reverse;
 }
 
 .growth-layout {
@@ -1047,8 +1110,9 @@ body {
 
 .growth-card:hover {
     border-color: var(--blue-primary);
-    box-shadow: 0 0 0 2px var(--blue-primary), var(--shadow-lg);
-    transform: translateY(-4px);
+    box-shadow: 0 0 0 2px var(--blue-primary), 0 12px 24px rgba(37, 99, 235, 0.15);
+    transform: translateY(-6px);
+    background: linear-gradient(135deg, #ffffff 0%, rgba(37, 99, 235, 0.02) 100%);
 }
 
 .growth-card-title {
@@ -1104,10 +1168,10 @@ body {
 }
 
 .case-card:hover {
-    background: white;
+    background: linear-gradient(135deg, #ffffff 0%, rgba(37, 99, 235, 0.03) 100%);
     border-color: var(--blue-primary);
-    box-shadow: 0 0 0 2px var(--blue-primary), var(--shadow-lg);
-    transform: translateY(-4px);
+    box-shadow: 0 0 0 2px var(--blue-primary), 0 12px 24px rgba(37, 99, 235, 0.15);
+    transform: translateY(-6px);
 }
 
 .case-label {
@@ -1165,6 +1229,19 @@ body {
     position: relative;
     padding: 100px 0;
     overflow: hidden;
+}
+
+.cta-band::after {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, transparent 70%);
+    bottom: -300px;
+    right: -200px;
+    pointer-events: none;
+    animation: float 22s ease-in-out infinite;
 }
 
 .cta-bg {
