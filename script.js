@@ -130,11 +130,11 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
     if (currentScroll > 100) {
-        header.style.background = 'rgba(2, 6, 23, 0.95)';
-        header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
+        header.style.background = 'rgba(255, 255, 255, 0.98)';
+        header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.08)';
     } else {
-        header.style.background = 'rgba(2, 6, 23, 0.85)';
-        header.style.boxShadow = 'none';
+        header.style.background = 'rgba(255, 255, 255, 0.9)';
+        header.style.boxShadow = '0 1px 2px 0 rgba(0, 0, 0, 0.05)';
     }
 
     lastScroll = currentScroll;
