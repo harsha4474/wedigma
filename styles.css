@@ -87,63 +87,359 @@ body {
 }
 
 .capabilities .container::before {
-    width: 70px;
-    height: 70px;
+    content: 'API';
+    position: absolute;
     top: 50%;
     right: 5%;
-    background: conic-gradient(from 0deg, rgba(16, 185, 129, 0.15), rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.15));
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    animation: rotate 40s linear infinite;
+    font-family: 'Courier New', monospace;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgba(59, 130, 246, 0.1);
+    z-index: 0;
+    pointer-events: none;
+    animation: float 35s ease-in-out infinite;
 }
 
 .why-us .container::before {
-    width: 65px;
-    height: 65px;
+    content: '▲';
+    position: absolute;
     bottom: 10%;
     right: 8%;
-    background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(239, 68, 68, 0.15));
-    border-radius: 50%;
+    font-size: 48px;
+    color: rgba(16, 185, 129, 0.15);
+    z-index: 0;
+    pointer-events: none;
     animation: float 35s ease-in-out infinite;
 }
 
 .lifecycle .container::after {
-    width: 75px;
-    height: 75px;
+    content: '📋→🎯';
+    position: absolute;
     bottom: 15%;
     left: 10%;
-    background: conic-gradient(from 90deg, rgba(236, 72, 153, 0.18), rgba(59, 130, 246, 0.18), rgba(16, 185, 129, 0.18));
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    font-size: 32px;
+    opacity: 0.15;
+    z-index: 0;
+    pointer-events: none;
     animation: floatReverse 30s ease-in-out infinite;
 }
 
 .cloud-api .container::before {
-    width: 80px;
-    height: 80px;
+    content: 'function()';
+    position: absolute;
     top: 50%;
     right: 6%;
-    background: linear-gradient(45deg, rgba(139, 92, 246, 0.2), rgba(236, 72, 153, 0.18));
-    clip-path: circle(45% at 50% 50%);
-    animation: rotate 38s linear infinite reverse;
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(139, 92, 246, 0.12);
+    z-index: 0;
+    pointer-events: none;
+    animation: float 38s ease-in-out infinite;
 }
 
 .growth .container::after {
-    width: 68px;
-    height: 68px;
+    content: '📈';
+    position: absolute;
     top: 30%;
     right: 5%;
-    background: conic-gradient(from 180deg, rgba(59, 130, 246, 0.2), rgba(245, 158, 11, 0.18), rgba(16, 185, 129, 0.2));
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    font-size: 56px;
+    opacity: 0.12;
+    z-index: 0;
+    pointer-events: none;
     animation: float 32s ease-in-out infinite;
 }
 
 .cases .container::after {
-    width: 72px;
-    height: 72px;
+    content: '📊';
+    position: absolute;
     top: 40%;
     left: 6%;
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.22), rgba(59, 130, 246, 0.18));
-    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    font-size: 52px;
+    opacity: 0.13;
+    z-index: 0;
+    pointer-events: none;
     animation: floatReverse 34s ease-in-out infinite;
+}
+
+/* Additional thematic decorations */
+.capabilities-grid::before {
+    content: '=> λ';
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    font-family: 'Courier New', monospace;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgba(16, 185, 129, 0.08);
+    z-index: 0;
+    pointer-events: none;
+    animation: floatReverse 28s ease-in-out infinite;
+}
+
+.lifecycle-timeline::after {
+    content: '✓ sprint';
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(59, 130, 246, 0.08);
+    z-index: -1;
+    pointer-events: none;
+    animation: float 32s ease-in-out infinite;
+}
+
+.growth-layout::before {
+    content: '↗ +40%';
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(16, 185, 129, 0.1);
+    z-index: 0;
+    pointer-events: none;
+    animation: float 26s ease-in-out infinite;
+}
+
+.cloud-features::before {
+    content: 'git push';
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-family: 'Courier New', monospace;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgba(59, 130, 246, 0.08);
+    z-index: 0;
+    pointer-events: none;
+    animation: floatReverse 35s ease-in-out infinite;
+}
+
+.reasons-grid::before {
+    content: '🎯';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    opacity: 0.04;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.cases-grid::before {
+    content: 'research';
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: rgba(139, 92, 246, 0.08);
+    z-index: 0;
+    pointer-events: none;
+    animation: float 30s ease-in-out infinite;
+}
+
+.architecture-diagram::before {
+    content: '< API />';
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(59, 130, 246, 0.1);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.contact-form::before {
+    content: '💬';
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    font-size: 72px;
+    opacity: 0.06;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Product & coding specific decorations */
+.hero-visual::before {
+    content: 'async';
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(139, 92, 246, 0.1);
+    z-index: 0;
+    pointer-events: none;
+    animation: float 28s ease-in-out infinite;
+}
+
+.hero-visual::after {
+    content: '[ ]';
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    font-family: 'Courier New', monospace;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(59, 130, 246, 0.08);
+    z-index: 0;
+    pointer-events: none;
+    animation: floatReverse 25s ease-in-out infinite;
+}
+
+.section-header::before {
+    content: '●●●';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: rgba(59, 130, 246, 0.15);
+    letter-spacing: 8px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.cta-content::before {
+    content: 'launch.now()';
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(16, 185, 129, 0.08);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.pipeline-card::after {
+    content: '→';
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 32px;
+    color: rgba(59, 130, 246, 0.2);
+    pointer-events: none;
+}
+
+.node-diagram::after {
+    content: 'sync';
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(59, 130, 246, 0.15);
+    pointer-events: none;
+}
+
+/* Market research & analytics decorations */
+.growth-narrative::before {
+    content: 'analytics.track()';
+    position: absolute;
+    top: -25px;
+    left: 0;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(16, 185, 129, 0.1);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.growth-cards::before {
+    content: '↗ ROI';
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: rgba(245, 158, 11, 0.1);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.case-card:nth-child(1)::after {
+    content: 'MVP';
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgba(59, 130, 246, 0.12);
+    pointer-events: none;
+}
+
+.case-card:nth-child(2)::after {
+    content: 'SCALE';
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgba(16, 185, 129, 0.12);
+    pointer-events: none;
+}
+
+.case-card:nth-child(3)::after {
+    content: 'GROWTH';
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgba(245, 158, 11, 0.12);
+    pointer-events: none;
+}
+
+.contact-info::before {
+    content: '🔍 discover';
+    position: absolute;
+    top: -35px;
+    left: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.08;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.lifecycle-panel::before {
+    content: 'agile';
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(59, 130, 246, 0.1);
+    z-index: 0;
+    pointer-events: none;
 }
 
 /* ===================================
@@ -355,6 +651,35 @@ body {
     background: conic-gradient(from 0deg, rgba(59, 130, 246, 0.2), rgba(147, 197, 253, 0.15), rgba(96, 165, 250, 0.2));
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     animation: floatReverse 18s ease-in-out infinite;
+}
+
+/* Coding symbols - brackets and tags */
+.hero .container::before {
+    content: '<code/>';
+    position: absolute;
+    top: 60%;
+    right: 8%;
+    font-family: 'Courier New', monospace;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgba(59, 130, 246, 0.12);
+    z-index: 0;
+    pointer-events: none;
+    animation: float 25s ease-in-out infinite;
+}
+
+.hero .container::after {
+    content: '{ }';
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    font-family: 'Courier New', monospace;
+    font-size: 48px;
+    font-weight: bold;
+    color: rgba(16, 185, 129, 0.1);
+    z-index: 0;
+    pointer-events: none;
+    animation: floatReverse 30s ease-in-out infinite;
 }
 
 .hero-bg-graphic::before {
