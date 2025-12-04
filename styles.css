@@ -481,6 +481,17 @@ body {
     color: var(--blue-primary);
 }
 
+.logo {
+    height: 45px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.brand-link:hover .logo {
+    transform: scale(1.05);
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -1948,6 +1959,13 @@ body {
     font-weight: 700;
     margin-bottom: 12px;
     color: white;
+}
+
+.footer-logo {
+    height: 60px;
+    width: auto;
+    margin-bottom: 16px;
+    display: block;
 }
 
 .footer-tagline {
