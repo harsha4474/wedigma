@@ -177,6 +177,20 @@ body {
     animation: floatReverse 28s ease-in-out infinite;
 }
 
+.capabilities-grid::after {
+    content: '📧 engage';
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    opacity: 0.28;
+    z-index: 0;
+    pointer-events: none;
+    animation: float 32s ease-in-out infinite;
+}
+
 .lifecycle-timeline::after {
     content: '✓ sprint';
     position: absolute;
@@ -226,7 +240,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 120px;
-    opacity: 0.04;
+    opacity: 0.12;
     z-index: 0;
     pointer-events: none;
 }
@@ -264,7 +278,20 @@ body {
     top: -40px;
     right: 20px;
     font-size: 72px;
-    opacity: 0.06;
+    opacity: 0.20;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.contact-form::after {
+    content: '→ follow-up';
+    position: absolute;
+    bottom: -30px;
+    left: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(16, 185, 129, 0.28);
     z-index: 0;
     pointer-events: none;
 }
@@ -375,6 +402,35 @@ body {
     pointer-events: none;
 }
 
+.growth-narrative::after {
+    content: '♻ retention';
+    position: absolute;
+    bottom: 10px;
+    right: 5%;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(139, 92, 246, 0.28);
+    z-index: 0;
+    pointer-events: none;
+    animation: float 30s ease-in-out infinite;
+}
+
+.growth-cards::after {
+    content: 'LTV+';
+    position: absolute;
+    bottom: -25px;
+    left: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgba(236, 72, 153, 0.28);
+    z-index: 0;
+    pointer-events: none;
+    animation: floatReverse 28s ease-in-out infinite;
+}
+
 .case-card:nth-child(1)::after {
     content: 'MVP';
     position: absolute;
@@ -422,7 +478,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 600;
-    opacity: 0.08;
+    opacity: 0.25;
     z-index: 0;
     pointer-events: none;
 }
@@ -437,7 +493,20 @@ body {
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: rgba(59, 130, 246, 0.1);
+    color: rgba(59, 130, 246, 0.28);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.lifecycle-panel::after {
+    content: '🔄 iterate';
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 0.28;
     z-index: 0;
     pointer-events: none;
 }
