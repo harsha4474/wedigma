@@ -603,36 +603,48 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form fade-up">
-                    <div class="form-group">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" id="name" name="name" class="form-input" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" name="email" class="form-input" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="company" class="form-label">Company</label>
-                        <input type="text" id="company" name="company" class="form-input">
-                    </div>
-                    <div class="form-group">
-                        <label for="project" class="form-label">Project Type</label>
-                        <select id="project" name="project" class="form-input">
-                            <option value="">Select...</option>
-                            <option value="new-product">New Product Launch</option>
-                            <option value="redesign">Website Redesign</option>
-                            <option value="cloud">Cloud Migration</option>
-                            <option value="growth">Growth & Marketing</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message" class="form-label">Tell us about your project</label>
-                        <textarea id="message" name="message" class="form-input form-textarea" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-                </form>
+               <form class="contact-form fade-up" 
+      action="https://api.web3forms.com/submit" 
+      method="POST">
+
+    <!-- Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="232f952d-ea3a-4cb5-a410-01f5833ab5b4">
+
+    <div class="form-group">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" id="name" name="name" class="form-input" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" name="email" class="form-input" required>
+    </div>
+
+    <div class="form-group">
+        <label for="company" class="form-label">Company</label>
+        <input type="text" id="company" name="company" class="form-input">
+    </div>
+
+    <div class="form-group">
+        <label for="project" class="form-label">Project Type</label>
+        <select id="project" name="project" class="form-input">
+            <option value="">Select...</option>
+            <option value="new-product">New Product Launch</option>
+            <option value="redesign">Website Redesign</option>
+            <option value="cloud">Cloud Migration</option>
+            <option value="growth">Growth & Marketing</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="message" class="form-label">Tell us about your project</label>
+        <textarea id="message" name="message" class="form-input form-textarea" rows="5" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+</form>
+
             </div>
         </div>
     </section>
