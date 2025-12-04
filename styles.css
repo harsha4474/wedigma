@@ -214,10 +214,34 @@ body {
     animation: float 20s ease-in-out infinite;
 }
 
+/* Tech code symbols floating */
+.hero::before {
+    content: '{ } < /> [ ] ( ) => !== === ... async await';
+    position: absolute;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    color: rgba(37, 99, 235, 0.08);
+    white-space: pre-wrap;
+    line-height: 3;
+    letter-spacing: 30px;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    pointer-events: none;
+    animation: codeFloat 40s linear infinite;
+    z-index: 0;
+}
+
 @keyframes float {
     0%, 100% { transform: translate(0, 0) scale(1); }
     33% { transform: translate(30px, -30px) scale(1.1); }
     66% { transform: translate(-20px, 20px) scale(0.9); }
+}
+
+@keyframes codeFloat {
+    0% { transform: translateY(0) rotate(0deg); opacity: 0.05; }
+    50% { transform: translateY(-30px) rotate(2deg); opacity: 0.08; }
+    100% { transform: translateY(0) rotate(0deg); opacity: 0.05; }
 }
 
 .hero-bg-graphic {
