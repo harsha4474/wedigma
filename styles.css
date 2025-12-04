@@ -106,7 +106,7 @@ body {
     bottom: 10%;
     right: 8%;
     font-size: 48px;
-    color: rgba(16, 185, 129, 0.15);
+    color: rgba(16, 185, 129, 0.30);
     z-index: 0;
     pointer-events: none;
     animation: float 35s ease-in-out infinite;
@@ -118,7 +118,7 @@ body {
     bottom: 15%;
     left: 10%;
     font-size: 32px;
-    opacity: 0.15;
+    opacity: 0.30;
     z-index: 0;
     pointer-events: none;
     animation: floatReverse 30s ease-in-out infinite;
@@ -132,7 +132,7 @@ body {
     font-family: 'Courier New', monospace;
     font-size: 24px;
     font-weight: bold;
-    color: rgba(139, 92, 246, 0.12);
+    color: rgba(139, 92, 246, 0.28);
     z-index: 0;
     pointer-events: none;
     animation: float 38s ease-in-out infinite;
@@ -144,7 +144,7 @@ body {
     top: 30%;
     right: 5%;
     font-size: 56px;
-    opacity: 0.12;
+    opacity: 0.28;
     z-index: 0;
     pointer-events: none;
     animation: float 32s ease-in-out infinite;
@@ -156,7 +156,7 @@ body {
     top: 40%;
     left: 6%;
     font-size: 52px;
-    opacity: 0.13;
+    opacity: 0.28;
     z-index: 0;
     pointer-events: none;
     animation: floatReverse 34s ease-in-out infinite;
@@ -171,7 +171,7 @@ body {
     font-family: 'Courier New', monospace;
     font-size: 36px;
     font-weight: bold;
-    color: rgba(16, 185, 129, 0.08);
+    color: rgba(16, 185, 129, 0.25);
     z-index: 0;
     pointer-events: none;
     animation: floatReverse 28s ease-in-out infinite;
@@ -185,7 +185,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: 600;
-    color: rgba(59, 130, 246, 0.08);
+    color: rgba(59, 130, 246, 0.25);
     z-index: -1;
     pointer-events: none;
     animation: float 32s ease-in-out infinite;
@@ -199,7 +199,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: 700;
-    color: rgba(16, 185, 129, 0.1);
+    color: rgba(16, 185, 129, 0.28);
     z-index: 0;
     pointer-events: none;
     animation: float 26s ease-in-out infinite;
@@ -213,7 +213,7 @@ body {
     font-family: 'Courier New', monospace;
     font-size: 28px;
     font-weight: bold;
-    color: rgba(59, 130, 246, 0.08);
+    color: rgba(59, 130, 246, 0.25);
     z-index: 0;
     pointer-events: none;
     animation: floatReverse 35s ease-in-out infinite;
@@ -239,7 +239,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 28px;
     font-weight: 600;
-    color: rgba(139, 92, 246, 0.08);
+    color: rgba(139, 92, 246, 0.25);
     z-index: 0;
     pointer-events: none;
     animation: float 30s ease-in-out infinite;
@@ -253,7 +253,7 @@ body {
     font-family: 'Courier New', monospace;
     font-size: 20px;
     font-weight: bold;
-    color: rgba(59, 130, 246, 0.1);
+    color: rgba(59, 130, 246, 0.28);
     z-index: 1;
     pointer-events: none;
 }
@@ -278,7 +278,7 @@ body {
     font-family: 'Courier New', monospace;
     font-size: 20px;
     font-weight: bold;
-    color: rgba(139, 92, 246, 0.1);
+    color: rgba(139, 92, 246, 0.28);
     z-index: 0;
     pointer-events: none;
     animation: float 28s ease-in-out infinite;
@@ -292,7 +292,7 @@ body {
     font-family: 'Courier New', monospace;
     font-size: 40px;
     font-weight: bold;
-    color: rgba(59, 130, 246, 0.08);
+    color: rgba(59, 130, 246, 0.25);
     z-index: 0;
     pointer-events: none;
     animation: floatReverse 25s ease-in-out infinite;
@@ -320,7 +320,7 @@ body {
     font-family: 'Courier New', monospace;
     font-size: 24px;
     font-weight: bold;
-    color: rgba(16, 185, 129, 0.08);
+    color: rgba(16, 185, 129, 0.25);
     z-index: 0;
     pointer-events: none;
 }
@@ -344,7 +344,7 @@ body {
     font-family: 'Courier New', monospace;
     font-size: 14px;
     font-weight: bold;
-    color: rgba(59, 130, 246, 0.15);
+    color: rgba(59, 130, 246, 0.30);
     pointer-events: none;
 }
 
@@ -357,7 +357,7 @@ body {
     font-family: 'Courier New', monospace;
     font-size: 16px;
     font-weight: bold;
-    color: rgba(16, 185, 129, 0.1);
+    color: rgba(16, 185, 129, 0.28);
     z-index: 0;
     pointer-events: none;
 }
@@ -370,7 +370,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 28px;
     font-weight: 700;
-    color: rgba(245, 158, 11, 0.1);
+    color: rgba(245, 158, 11, 0.28);
     z-index: 0;
     pointer-events: none;
 }
@@ -384,7 +384,7 @@ body {
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 2px;
-    color: rgba(59, 130, 246, 0.12);
+    color: rgba(59, 130, 246, 0.28);
     pointer-events: none;
 }
 
@@ -397,7 +397,7 @@ body {
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 2px;
-    color: rgba(16, 185, 129, 0.12);
+    color: rgba(16, 185, 129, 0.28);
     pointer-events: none;
 }
 
@@ -410,7 +410,7 @@ body {
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 2px;
-    color: rgba(245, 158, 11, 0.12);
+    color: rgba(245, 158, 11, 0.28);
     pointer-events: none;
 }
 
