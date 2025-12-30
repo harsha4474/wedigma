@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway Integration Case Study | Wedigma</title>
+    <meta name="description" content="PCI DSS Level 1 certified payment gateway. Processing $5M+ monthly with 99.98% success rate and zero security incidents.">
+
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <a href="../index.html" class="brand-link">
+                    <img src="../assets/wedigmalogo.png" alt="Wedigma" class="logo">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../capabilities.html" class="nav-link">Capabilities</a></li>
+                <li><a href="../why-wedigma.html" class="nav-link">Why Us</a></li>
+                <li><a href="../process.html" class="nav-link">Process</a></li>
+                <li><a href="../index.html#cloud-api" class="nav-link">Engineering</a></li>
+                <li><a href="../index.html#growth" class="nav-link">Growth</a></li>
+                <li><a href="../case-studies.html" class="nav-link">Cases</a></li>
+                <li><a href="../contact.html" class="nav-link nav-link-cta">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-graphic"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-tag">Fintech Case Study</span>
+                <h1 class="hero-title">Payment Gateway Integration</h1>
+                <p class="hero-subtitle">
+                    Built PCI DSS Level 1 compliant payment infrastructure with Stripe. Multi-currency support, automated reconciliation, and fraud detection processing $5M+ monthly.
+                </p>
+                <div class="hero-metrics">
+                    <div class="metric-chip">
+                        <span class="metric-value">PCI DSS L1</span>
+                        <span class="metric-label">Compliance</span>
+                    </div>
+                    <div class="metric-chip">
+                        <span class="metric-value">$5M+</span>
+                        <span class="metric-label">Monthly Processing</span>
+                    </div>
+                    <div class="metric-chip">
+                        <span class="metric-value">99.98%</span>
+                        <span class="metric-label">Success Rate</span>
+                    </div>
+                    <div class="metric-chip">
+                        <span class="metric-value">Zero</span>
+                        <span class="metric-label">Security Incidents</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenge Section -->
+    <section class="why-us section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Challenge</span>
+                <h2 class="section-title">Complex Payment Compliance Requirements</h2>
+            </div>
+            <div class="reasons-grid">
+                <div class="reason-card fade-up">
+                    <h3 class="reason-title">PCI DSS Compliance</h3>
+                    <p class="reason-description">Required PCI DSS Level 1 certification to process credit cards. Needed secure tokenization, encrypted storage, and comprehensive audit logging without storing sensitive card data.</p>
+                </div>
+                <div class="reason-card fade-up">
+                    <h3 class="reason-title">Fraud Detection</h3>
+                    <p class="reason-description">High-risk industry with significant fraud attempts. Needed real-time fraud scoring, velocity checks, and automated decision rules without adding friction to legitimate transactions.</p>
+                </div>
+                <div class="reason-card fade-up">
+                    <h3 class="reason-title">Multi-Currency Support</h3>
+                    <p class="reason-description">International customer base requiring 30+ currencies, dynamic FX rates, and compliance with local payment regulations across multiple jurisdictions.</p>
+                </div>
+                <div class="reason-card fade-up">
+                    <h3 class="reason-title">Reconciliation Complexity</h3>
+                    <p class="reason-description">Manual reconciliation between payment processor, bank accounts, and internal ledger taking 20+ hours monthly. Errors causing revenue leakage and accounting headaches.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="capabilities section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Solution</span>
+                <h2 class="section-title">Secure Payment Architecture</h2>
+            </div>
+            <div class="capabilities-grid">
+                <div class="capability-card fade-up">
+                    <h3 class="card-title">Stripe Integration Layer</h3>
+                    <p class="card-description">PCI-compliant tokenization with Stripe Elements for secure card capture and processing.</p>
+                    <ul class="card-list">
+                        <li>Stripe Elements for PCI-compliant card input</li>
+                        <li>Payment Intent API for 3D Secure (SCA)</li>
+                        <li>Tokenization layer (no card storage)</li>
+                        <li>Webhook-driven state management</li>
+                    </ul>
+                </div>
+                <div class="capability-card fade-up">
+                    <h3 class="card-title">Fraud Prevention Engine</h3>
+                    <p class="card-description">Multi-layered fraud detection combining Stripe Radar with custom rules engine.</p>
+                    <ul class="card-list">
+                        <li>Stripe Radar ML fraud detection</li>
+                        <li>Custom velocity checks (per card, per IP)</li>
+                        <li>Geographic risk scoring</li>
+                        <li>Automated decline rules (98% fraud block rate)</li>
+                    </ul>
+                </div>
+                <div class="capability-card fade-up">
+                    <h3 class="card-title">Automated Reconciliation</h3>
+                    <p class="card-description">Daily automated reconciliation between Stripe payouts and internal ledger.</p>
+                    <ul class="card-list">
+                        <li>Automated payout matching</li>
+                        <li>Multi-currency settlement tracking</li>
+                        <li>Dispute and refund handling</li>
+                        <li>Real-time Slack alerts for mismatches</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="cloud-api section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technology</span>
+                <h2 class="section-title">Tech Stack</h2>
+            </div>
+            <div class="architecture-diagram fade-up">
+                <div class="arch-layer">
+                    <span class="arch-label">Payment UI</span>
+                    <div class="arch-nodes">
+                        <div class="arch-node">Stripe Elements</div>
+                        <div class="arch-node">React Checkout</div>
+                        <div class="arch-node">TypeScript</div>
+                    </div>
+                </div>
+                <div class="arch-layer">
+                    <span class="arch-label">API Gateway</span>
+                    <div class="arch-nodes">
+                        <div class="arch-node">Node.js API</div>
+                        <div class="arch-node">Stripe SDK</div>
+                        <div class="arch-node">Webhook Handler</div>
+                    </div>
+                </div>
+                <div class="arch-layer">
+                    <span class="arch-label">Business Logic</span>
+                    <div class="arch-nodes">
+                        <div class="arch-node">Payment State Machine</div>
+                        <div class="arch-node">Fraud Rules Engine</div>
+                        <div class="arch-node">Reconciliation Service</div>
+                    </div>
+                </div>
+                <div class="arch-layer">
+                    <span class="arch-label">Data Layer</span>
+                    <div class="arch-nodes">
+                        <div class="arch-node">PostgreSQL</div>
+                        <div class="arch-node">Redis (idempotency)</div>
+                        <div class="arch-node">S3 (audit logs)</div>
+                    </div>
+                </div>
+                <div class="arch-layer">
+                    <span class="arch-label">Monitoring</span>
+                    <div class="arch-nodes">
+                        <div class="arch-node">Datadog</div>
+                        <div class="arch-node">Sentry</div>
+                        <div class="arch-node">PagerDuty</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="lifecycle section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Results</span>
+                <h2 class="section-title">Performance Metrics</h2>
+            </div>
+            <div class="lifecycle-layout">
+                <div class="lifecycle-timeline">
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">PCI DSS Level 1 Certified</h3>
+                            <p class="timeline-description">Achieved PCI DSS Level 1 compliance in 8 weeks. Passed external security audit with zero findings. Annual compliance maintained with automated evidence collection.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">$5M+ Monthly Processing</h3>
+                            <p class="timeline-description">Scaled from $500k to $5M+ monthly volume in 6 months. 99.98% success rate with &lt;200ms payment confirmation. Supporting 35 currencies across 60+ countries.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">98% Fraud Block Rate</h3>
+                            <p class="timeline-description">ML-powered fraud detection blocking 98% of fraudulent transactions pre-authorization. False positive rate reduced from 12% to &lt;2% through custom rules tuning.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Automated Reconciliation</h3>
+                            <p class="timeline-description">Reconciliation time reduced from 20+ hours/month to fully automated. Zero manual intervention. Real-time discrepancy alerts with &lt;$5 tolerance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lifecycle-panel">
+                    <div class="panel-content fade-up">
+                        <h3 class="panel-title">Client Testimonial</h3>
+                        <p class="panel-text">
+                            "Wedigma built our payment infrastructure from scratch—PCI compliant, fraud-resistant, and processing millions monthly. Their expertise in fintech compliance saved us 6+ months of regulatory work. We launched with confidence knowing our payment stack was enterprise-grade from day one."
+                        </p>
+                        <p style="margin-top: 16px; font-weight: 600; color: var(--text-primary);">— Founder & CEO, Fintech Startup</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Case Studies -->
+    <section class="cases section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">More Case Studies</span>
+                <h2 class="section-title">Related Projects</h2>
+            </div>
+            <div class="cases-grid">
+                <div class="case-card fade-up">
+                    <div class="case-label">B2B SaaS</div>
+                    <h3 class="case-title">Enterprise Analytics Platform</h3>
+                    <p class="case-section-text">Rebuilt legacy analytics dashboard with 4x performance boost, scaled to 50k concurrent users.</p>
+                    <a href="enterprise-analytics-platform.html" class="btn btn-secondary" style="margin-top: 16px; width: 100%;">Read Case Study</a>
+                </div>
+                <div class="case-card fade-up">
+                    <div class="case-label">E-Commerce</div>
+                    <h3 class="case-title">DTC Brand Replatform</h3>
+                    <p class="case-section-text">Headless commerce with 65% conversion lift and $1.2M additional revenue in Q1.</p>
+                    <a href="dtc-brand-replatform.html" class="btn btn-secondary" style="margin-top: 16px; width: 100%;">Read Case Study</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-band section">
+        <div class="cta-bg"></div>
+        <div class="container">
+            <div class="cta-content fade-up">
+                <h2 class="cta-title">Need Secure Payment Infrastructure?</h2>
+                <p class="cta-subtitle">Book a session to discuss compliance requirements and payment architecture.</p>
+                <div class="cta-buttons">
+                    <a href="../contact.html" class="btn btn-primary btn-glow">Book a Build Session</a>
+                    <a href="../case-studies.html" class="btn btn-secondary-alt">View All Case Studies</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <img src="../assets/wedigmalogo.png" alt="Wedigma" class="footer-logo">
+                    <p class="footer-tagline">Product innovation studio and cloud engineering partner.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/wedigma" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/wedigmaonline/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://x.com/Wedigmaonline" class="social-link" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://in.pinterest.com/wedigmahelp/" class="social-link" aria-label="Pinterest" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/wedigma" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Capabilities</h4>
+                    <ul class="footer-links">
+                        <li><a href="../capabilities/experience-layer.html">Experience Layer</a></li>
+                        <li><a href="../capabilities/cloud-core.html">Cloud Core</a></li>
+                        <li><a href="../capabilities/integration-mesh.html">Integration Mesh</a></li>
+                        <li><a href="../capabilities/growth-engine.html">Growth Engine</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="../why-wedigma.html">Why Wedigma</a></li>
+                        <li><a href="../case-studies.html">Case Studies</a></li>
+                        <li><a href="../process.html">Our Process</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-legal">&copy; <span id="current-year"></span> Wedigma. All rights reserved.</p>
+                <div class="footer-legal-links">
+                    <a href="../privacy-policy.html">Privacy Policy</a>
+                    <a href="../terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="go-to-top" id="goToTop" aria-label="Go to top">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </button>
+
+    <script src="../script.js"></script>
+</body>
+</html>
