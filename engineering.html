@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Studies | Real Products, Real Results | Wedigma</title>
-    <meta name="description" content="B2B SaaS, Fintech, and E-commerce product launches. Enterprise analytics platforms, payment gateways, and DTC brand replatforms.">
+    <title>Cloud & API Engineering | Enterprise Infrastructure | Wedigma</title>
+    <meta name="description" content="Scalable, secure, observable cloud infrastructure. Auto-scaling Kubernetes, API gateways, multi-cloud deployment on AWS, GCP, and DigitalOcean.">
 
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,90 +40,137 @@
         <div class="hero-bg-graphic"></div>
         <div class="container">
             <div class="hero-content">
-                <span class="hero-tag">Case Studies</span>
-                <h1 class="hero-title">Real Products, Real Results</h1>
+                <span class="hero-tag">Infrastructure</span>
+                <h1 class="hero-title">Enterprise Cloud & API Architecture</h1>
                 <p class="hero-subtitle">
-                    Enterprise-grade launches for B2B SaaS, Fintech, and E-commerce companies. From concept to scale in 8-12 weeks.
+                    Scalable, secure, observable infrastructure built for growth. Auto-scaling Kubernetes, API gateways, and multi-cloud deployment.
                 </p>
                 <div class="hero-ctas">
-                    <a href="contact.html" class="btn btn-primary">Discuss Your Project</a>
+                    <a href="contact.html" class="btn btn-primary">Book a Build Session</a>
+                    <a href="capabilities/cloud-core.html" class="btn btn-secondary">View Cloud Core</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Case Studies Grid Section -->
-    <section class="cases section" id="cases">
+    <!-- Architecture Diagram Section -->
+    <section class="cloud-api section">
         <div class="container">
-            <div class="cases-grid">
-                <div class="case-card fade-up">
-                    <div class="case-label">B2B SaaS</div>
-                    <h3 class="case-title">Enterprise Analytics Platform</h3>
-                    <div class="case-section">
-                        <h4 class="case-section-title">Challenge</h4>
-                        <p class="case-section-text">
-                            Late-stage startup needed to rebuild legacy analytics dashboard with modern tech stack and scale to 10,000+ concurrent users.
-                        </p>
+            <div class="section-header">
+                <span class="section-tag">Tech Stack</span>
+                <h2 class="section-title">Full-Stack Infrastructure</h2>
+                <p class="section-description">Enterprise-grade architecture from edge to database.</p>
+            </div>
+            <div class="architecture-diagram fade-up">
+                <div class="arch-layer">
+                    <span class="arch-label">CDN & Edge</span>
+                    <div class="arch-nodes">
+                        <div class="arch-node">CloudFlare</div>
+                        <div class="arch-node">Vercel Edge</div>
                     </div>
-                    <div class="case-section">
-                        <h4 class="case-section-title">Solution</h4>
-                        <p class="case-section-text">
-                            Next.js frontend with real-time data streaming. Kubernetes cluster on AWS with auto-scaling. GraphQL API layer with Redis caching.
-                        </p>
-                    </div>
-                    <div class="case-section">
-                        <h4 class="case-section-title">Outcome</h4>
-                        <p class="case-section-text">
-                            <strong>12-week delivery.</strong> 4x performance improvement. Scaled to 50k users without infrastructure changes. $2M ARR in year one.
-                        </p>
-                    </div>
-                    <a href="case-studies/enterprise-analytics-platform.html" class="btn btn-secondary" style="margin-top: 24px; width: 100%;">Read Full Case Study</a>
                 </div>
-                <div class="case-card fade-up">
-                    <div class="case-label">Fintech</div>
-                    <h3 class="case-title">Payment Gateway Integration</h3>
-                    <div class="case-section">
-                        <h4 class="case-section-title">Challenge</h4>
-                        <p class="case-section-text">
-                            Fintech startup required secure payment processing with Stripe, bank integrations, and PCI compliance for regulated markets.
-                        </p>
+                <div class="arch-layer">
+                    <span class="arch-label">Application</span>
+                    <div class="arch-nodes">
+                        <div class="arch-node">Next.js</div>
+                        <div class="arch-node">Node API</div>
+                        <div class="arch-node">Python</div>
                     </div>
-                    <div class="case-section">
-                        <h4 class="case-section-title">Solution</h4>
-                        <p class="case-section-text">
-                            Secure API gateway with tokenization. Multi-currency support. Fraud detection rules and automated reconciliation workflows.
-                        </p>
-                    </div>
-                    <div class="case-section">
-                        <h4 class="case-section-title">Outcome</h4>
-                        <p class="case-section-text">
-                            <strong>PCI DSS Level 1 certified.</strong> Processing $5M+ monthly. 99.98% transaction success rate. Zero security incidents.
-                        </p>
-                    </div>
-                    <a href="case-studies/payment-gateway-integration.html" class="btn btn-secondary" style="margin-top: 24px; width: 100%;">Read Full Case Study</a>
                 </div>
-                <div class="case-card fade-up">
-                    <div class="case-label">E-Commerce</div>
-                    <h3 class="case-title">DTC Brand Replatform</h3>
-                    <div class="case-section">
-                        <h4 class="case-section-title">Challenge</h4>
-                        <p class="case-section-text">
-                            D2C brand on legacy Shopify needed custom storefront with advanced personalization and subscription management.
-                        </p>
+                <div class="arch-layer">
+                    <span class="arch-label">Data & Services</span>
+                    <div class="arch-nodes">
+                        <div class="arch-node">PostgreSQL</div>
+                        <div class="arch-node">Redis</div>
+                        <div class="arch-node">S3</div>
                     </div>
-                    <div class="case-section">
-                        <h4 class="case-section-title">Solution</h4>
-                        <p class="case-section-text">
-                            Headless commerce with Shopify backend. Next.js frontend with dynamic product recommendations. Subscription engine with Recharge.
-                        </p>
+                </div>
+                <div class="arch-layer">
+                    <span class="arch-label">Infrastructure</span>
+                    <div class="arch-nodes">
+                        <div class="arch-node">AWS</div>
+                        <div class="arch-node">GCP</div>
+                        <div class="arch-node">DigitalOcean</div>
                     </div>
-                    <div class="case-section">
-                        <h4 class="case-section-title">Outcome</h4>
-                        <p class="case-section-text">
-                            <strong>65% conversion lift.</strong> 2.1s page load time. 40% increase in subscription retention. $1.2M additional revenue in Q1.
-                        </p>
-                    </div>
-                    <a href="case-studies/dtc-brand-replatform.html" class="btn btn-secondary" style="margin-top: 24px; width: 100%;">Read Full Case Study</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="capabilities section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Core Services</span>
+                <h2 class="section-title">Enterprise Infrastructure Services</h2>
+            </div>
+            <div class="capabilities-grid">
+                <div class="capability-card fade-up">
+                    <h3 class="card-title">Auto-Scaling Infrastructure</h3>
+                    <p class="card-description">
+                        Kubernetes-orchestrated containers with horizontal pod autoscaling. Load balancers, health checks, and blue-green deployments.
+                    </p>
+                    <ul class="card-list">
+                        <li>Container orchestration (Docker + K8s)</li>
+                        <li>Auto-scaling based on traffic patterns</li>
+                        <li>Zero-downtime deployments</li>
+                        <li>Multi-region redundancy</li>
+                    </ul>
+                    <a href="capabilities/cloud-core.html" class="btn btn-secondary" style="margin-top: 16px; width: 100%;">Learn More</a>
+                </div>
+                <div class="capability-card fade-up">
+                    <h3 class="card-title">API Gateway & Integration Layer</h3>
+                    <p class="card-description">
+                        RESTful and GraphQL APIs with authentication, rate limiting, caching, and comprehensive logging. Third-party service integration.
+                    </p>
+                    <ul class="card-list">
+                        <li>OAuth 2.0 & JWT authentication</li>
+                        <li>API versioning & documentation</li>
+                        <li>Webhook management</li>
+                        <li>Request throttling & caching</li>
+                    </ul>
+                    <a href="capabilities/integration-mesh.html" class="btn btn-secondary" style="margin-top: 16px; width: 100%;">Learn More</a>
+                </div>
+                <div class="capability-card fade-up">
+                    <h3 class="card-title">Observability & Security</h3>
+                    <p class="card-description">
+                        Real-time monitoring, distributed tracing, log aggregation. DDoS protection, WAF rules, and automated security scanning.
+                    </p>
+                    <ul class="card-list">
+                        <li>Prometheus + Grafana dashboards</li>
+                        <li>Automated backup & disaster recovery</li>
+                        <li>SOC 2 & GDPR compliance support</li>
+                        <li>24/7 incident response</li>
+                    </ul>
+                    <a href="capabilities/cloud-core.html" class="btn btn-secondary" style="margin-top: 16px; width: 100%;">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="why-us section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Performance</span>
+                <h2 class="section-title">Enterprise-Grade SLAs</h2>
+            </div>
+            <div class="hero-metrics" style="justify-content: center; margin-bottom: 80px;">
+                <div class="metric-chip">
+                    <span class="metric-value">99.9%</span>
+                    <span class="metric-label">Uptime SLA</span>
+                </div>
+                <div class="metric-chip">
+                    <span class="metric-value">&lt;2s</span>
+                    <span class="metric-label">API Response Time</span>
+                </div>
+                <div class="metric-chip">
+                    <span class="metric-value">24/7</span>
+                    <span class="metric-label">Monitoring</span>
+                </div>
+                <div class="metric-chip">
+                    <span class="metric-value">Auto</span>
+                    <span class="metric-label">Scaling</span>
                 </div>
             </div>
         </div>
@@ -134,11 +181,11 @@
         <div class="cta-bg"></div>
         <div class="container">
             <div class="cta-content fade-up">
-                <h2 class="cta-title">Ready to Build Your Success Story?</h2>
-                <p class="cta-subtitle">Book a session to discuss your product launch and growth goals.</p>
+                <h2 class="cta-title">Ready to Build Scalable Infrastructure?</h2>
+                <p class="cta-subtitle">Book a session to discuss your cloud architecture and scaling requirements.</p>
                 <div class="cta-buttons">
                     <a href="contact.html" class="btn btn-primary btn-glow">Book a Build Session</a>
-                    <a href="capabilities.html" class="btn btn-secondary-alt">View Capabilities</a>
+                    <a href="case-studies.html" class="btn btn-secondary-alt">View Case Studies</a>
                 </div>
             </div>
         </div>
